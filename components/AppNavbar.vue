@@ -15,7 +15,7 @@
           <!--First nav-->
           <div class="hidden md:flex flex items-center space-x-1">
             <nuxt-link to="/" class="py-5 px-2 text-gray-700 hover:text-gray-900">Forside</nuxt-link>
-            <nuxt-link to="/home" class="py-5 px-2 text-gray-700 hover:text-gray-900">Administrator</nuxt-link>
+            <nuxt-link to="#" class="py-5 px-2 text-gray-700 hover:text-gray-900">Dagens tilbud</nuxt-link>
           </div>
         </div>
         <!--second nav-->

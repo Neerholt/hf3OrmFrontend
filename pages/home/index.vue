@@ -64,7 +64,32 @@
 
 
 <script>
+
+
+import axios from "axios";
+
 export default {
+  data(){
+    return{
+      customer: []
+    }
+  },
+  async created() {
+    const config ={
+      headers: {
+        'Accept':'application/json'
+      }
+    }
+
+    try {
+      const res = await axios.get('https://hf3.binau.dev/api/customers?page=1', config);
+      console.log(res);
+    }catch (error){
+      console.log(error);
+    }
+
+
+  },
   head(){
    return{
      title: 'Administrator',
