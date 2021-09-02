@@ -65,36 +65,30 @@
 
 <script>
 
-
-import axios from "axios";
-
 export default {
   data(){
     return{
-      customer: []
+      request: []
     }
   },
-  async created() {
-    const config ={
-      headers: {
-        'Accept':'application/json'
-      }
-    }
 
-    try {
-      const res = await axios.get('https://hf3.binau.dev/api/customers?page=1', config);
-      console.log(res);
-    }catch (error){
-      console.log(error);
-    }
-
-
+  async fetch() {
+    this.request = await fetch(`/api/${'api/customers'}`).then(res => {
+      return res.json();
+    })
   },
+
+  computed: {
+    customers() {
+      return this.request.data;
+    },
+  },
+
   head(){
    return{
      title: 'Administrator',
    }
-  }
+  },
 }
 </script>
 
