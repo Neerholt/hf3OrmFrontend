@@ -65,36 +65,36 @@
 
 <script>
 
-
-import axios from "axios";
-
 export default {
   data(){
     return{
       customer: []
     }
   },
+
   async created() {
-    const config ={
+    const config = {
       headers: {
-        'Accept':'application/json'
+        Accept: "application/json"
+      }
+    };
+    try {
+      const res = await this.$axios.$get("/api/api/customers", config);
+      console.log(res);
+      // this.customer = res;
+    } catch (err) {
+      console.log(err);
+    }
+  },
+
+    head(){
+      return{
+        title: 'Administrator',
       }
     }
 
-    try {
-      const res = await axios.get('https://hf3.binau.dev/api/customers?page=1', config);
-      console.log(res);
-    }catch (error){
-      console.log(error);
-    }
 
 
-  },
-  head(){
-   return{
-     title: 'Administrator',
-   }
-  }
 }
 </script>
 
