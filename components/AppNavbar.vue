@@ -20,8 +20,8 @@
         </div>
         <!--second nav-->
       <div class="hidden md:flex flex items-center space-x-1">
-        <nuxt-link to="/login" class="py-5 px-3 hover:text-gray-900">Login</nuxt-link>
-        <nuxt-link to="/signup" class="py-2 px-3 bg-yellow-400 text-yellow-900 rounded hover:text-gray-900 hover:bg-yellow-300 hover:text-yellow-800 transition duration-300">Register</nuxt-link>
+        <nuxt-link  to="/login" class="py-5 px-3 hover:text-gray-900">Login</nuxt-link>
+        <nuxt-link  to="/signup" class="py-2 px-3 bg-yellow-400 text-yellow-900 rounded hover:text-gray-900 hover:bg-yellow-300 hover:text-yellow-800 transition duration-300">Register</nuxt-link>
       </div>
 
         <!--Mobile button goes here -->

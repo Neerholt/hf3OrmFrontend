@@ -14,7 +14,10 @@
     "@nuxtjs/axios": "^5.13.6",
     "axios": "^0.21.1",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "datatables.net": "^1.10.25",
+    "datatables.net-dt": "^1.1.0",
+    "nuxt": "^2.15.7",
+    "vue-sweetalert2": "^5.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
