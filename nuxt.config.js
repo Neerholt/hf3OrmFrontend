@@ -45,6 +45,24 @@ export default {
     'vue-sweetalert2/nuxt',
   ],
 
+
+  auth: {
+    strategies: {
+      cookie: {
+        cookie: {
+          // (optional) If set we check this cookie existence for loggedIn check
+          name: 'XSRF-TOKEN',
+        },
+        endpoints: {
+          // (optional) If set, we send a get request to this endpoint before login
+          csrf: {
+            url: ''
+          }
+        }
+      },
+    }
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     proxy: true,
